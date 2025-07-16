@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+  padding: 20px;
+  background: linear-gradient(#89f7fe, #66a6ff);
+  color: #fff;
+}
+
+/* Responsive container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Input + Mic button */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: #ffffff88;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffffffcc;
+}
+
+/* Weather card */
+.card {
+  background: #ffffff22;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Themes */
+.sunny { background: linear-gradient(#ffe259, #ffa751); color: #222; }
+.rainy { background: linear-gradient(#4e54c8, #8f94fb); color: #fff; }
+.cold  { background: linear-gradient(#83a4d4, #b6fbff); color: #000; }
+.hot   { background: linear-gradient(#ff4e50, #f9d423); color: #000; }
+
+/* Media Queries */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}

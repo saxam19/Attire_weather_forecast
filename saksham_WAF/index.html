@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attire Weather Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="app">
+    <h1>🌤️ Attire Weather Forecast</h1>
+
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Enter a city name..." />
+      <button id="micBtn" title="Speak City">🎤</button>
+    </div>
+
+    <div id="weatherCard" class="card hidden">
+      <h2 id="location"></h2>
+      <p id="weather"></p>
+      <p id="attire"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
